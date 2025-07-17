@@ -7,6 +7,9 @@ CREATE TABLE patients  (
     admitted_on DATE
 );
 
+--needed later
+ALTER TABLE patients ADD coverage_limit NUMBER;
+
 --2. Insurance Providers Table
 CREATE TABLE insurers (
     insurance_id NUMBER PRIMARY KEY,
