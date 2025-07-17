@@ -41,7 +41,7 @@ sqlplus ... @sql/6_sample_data.sql
 ### 4. Run reports
 sqlplus ... @sql/7_reports.sql
 
-## 📊 Sample Reports (put under the docs Results + dashboards)
+## 📊 Sample Reports (put under the reports Results + dashboards)
 1. Coverage left per patient
 2. Approved vs denied claims
 3. Insurer-wise summaries
