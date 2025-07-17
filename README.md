@@ -16,30 +16,37 @@ Tableau – For Data visualization for reports
 - Modular PL/SQL code organization (triggers, procedures, functions)
 
 ## 📂 Folder Guide
-Folder	Description
-/sql/	All DDL, sample data, PL/SQL code
-/python_app/	(Optional) Backend scripts for API or CLI
-/tableau/	Dashboards or screenshots of analytics
-/docs/	Architecture and data flow diagrams
+
+| Folder         | Description                                |
+|----------------|--------------------------------------------|
+| `/sql/`        | All DDL, sample data, PL/SQL code          |
+| `/reports/`    | reports results and dashboards     |
+| `/docs/`       | Architecture and data flow, schema diagrams        |
 
 ## 🧪 How to Run
-bash
-Copy
-Edit
+On bash:
 ### 1. Run tables and sequences
-sqlplus user/password@localhost:1521/XEPDB1 @sql/1_tables.sql
-sqlplus user/password@localhost:1521/XEPDB1 @sql/2_sequences.sql
+```bash
+sqlplus user/password@localhost:1521/XE @sql/tables.sql
+sqlplus user/password@localhost:1521/XE @sql/sequences.sql
+```
 
 ### 2. Add triggers, functions, procedures
-sqlplus ... @sql/3_triggers.sql
-sqlplus ... @sql/4_functions.sql
-sqlplus ... @sql/5_procedures.sql
+```bash
+sqlplus ... @sql/triggers.sql
+sqlplus ... @sql/functions.sql
+sqlplus ... @sql/procedures.sql
+```
 
 ### 3. Insert sample data
-sqlplus ... @sql/6_sample_data.sql
+```bash
+sqlplus ... @sql/sample_data.sql
+```
 
 ### 4. Run reports
+```bash
 sqlplus ... @sql/7_reports.sql
+```
 
 ## 📊 Sample Reports (put under the reports Results + dashboards)
 1. Coverage left per patient
